@@ -1,3 +1,6 @@
+import { FaRegUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 const Header=()=>{
     return(
        
@@ -5,17 +8,15 @@ const Header=()=>{
         <div>
             <h1 className="text-2xl ">TSS</h1>
         </div>
+        
         <div>
-            <input type="text" />
-            <span>Search</span>
-        </div>
-        <div>
-            <select className="text-black p-2">
-                <option value="profile">Profile</option>
+       <Link to="/login"> <FaRegUserCircle className="text-4xl  cursor-pointer" /></Link>
+            {/* <select className="text-black p-2">
+                <option value="profile"><FaRegUserCircle /></option>
                 <option value="admin">Admin</option>
                 <option value="user">User</option>
            
-            </select>
+            </select> */}
         </div>
       </nav>
   
